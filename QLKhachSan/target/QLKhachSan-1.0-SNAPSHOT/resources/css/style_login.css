@@ -1,0 +1,149 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 6, 2021, 3:53:57 PM
+    Author     : ACER
+*/
+
+
+$padding-horizontal:5px;
+$highlight-color:#16abf0;
+body{
+    background:#34495e;
+    color:white;
+    text-align:center;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:10pt;
+}
+h3{
+    font-size:2.5em;
+    text-align: center;
+    font-family: sans-serif;
+    color: #17a2b8;
+    padding-top: 12px;
+}
+a{
+    color:inherit;
+}
+form{
+    width:45%;
+    margin:0 auto;
+    background:white;
+    border-radius:10px;
+    margin-top: 20px;
+    margin-bottom:50px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 20px 20px 20px 20px;
+}
+form.login{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+input, .user{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:20pt;
+    line-height:2.6em;
+    height:2.6em;
+    margin-left: 5%;
+    padding:0;
+    width:85%;
+}
+.user input{
+    line-height:3.4em;
+}
+.user input:focus+label{
+    color:lightblue;
+}
+.user input[value]+label{
+    color:red;
+}
+.user{
+    position:relative;
+    margin-top: 10px;
+}
+
+.user input{
+    width: 95%;
+    font-size:12pt;
+    border:none;
+    outline:none;
+    position:absolute;
+    top:0;
+    left:0;
+    margin-top:10px;
+    display:block;
+    background:transparent;
+    z-index:1;
+    border-bottom:1px solid #ccc;
+    text-indent:$padding-horizontal;
+}
+
+.user:last-child input{
+    border-bottom:none;
+}
+.user label{
+    display:block;
+    position:absolute;
+    top:0;
+    left:$padding-horizontal;
+    font-size:15pt;
+    z-index:1;
+    @include transform-origin(0,0.0em);
+    @include transition(transform 160ms, color 200ms);
+    @include transform(scale(1,1) rotateY(0));
+    color:#999;
+}
+
+.user input:valid~label{
+    @include transform(scale(0,0.55) rotateY(0));
+}
+.user input:valid{
+    line-height:0.2em;
+}
+
+
+/* form starting stylings ------------------------------- */
+
+input {
+    font-family: cursive;
+    font-size:15px;
+    display:block;
+    border:none;
+    border:1px solid #757575;
+}
+input:focus{ 
+    outline:none; 
+}
+/* LABEL ======================================= */
+label          {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+/* active state */
+input:focus ~ label, input:valid ~ label    {
+    top:-30px;
+    font-size:16px;
+    color:#5264AE;
+}
+.col-md-6{
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 24%;
+}
+.col-md-12 p{
+    padding-top:16px;
+    text-align: center;
+}

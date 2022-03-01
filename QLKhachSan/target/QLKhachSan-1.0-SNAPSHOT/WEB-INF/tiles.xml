@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name ="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content" value="BASE" />
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    
+    <definition name="phong" extends="baseLayout">
+        <put-attribute name="title" value="Phòng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/phong.jsp" />
+    </definition>
+    <definition name="chitiet-phong" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết phòng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/chitiet-phong.jsp" />
+    </definition>
+    <definition name="booking" extends="baseLayout">
+        <put-attribute name="title" value="Đặt phòng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/booking.jsp" />
+    </definition>
+    <definition name="hoadon" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý hóa đơn" />
+        <put-attribute name="content" value="/WEB-INF/jsp/hoadon.jsp" />
+    </definition>
+    <definition name="chitiet-dat" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết đặt phòng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/chitiet-dat.jsp" />
+    </definition>
+    <definition name="dichvu" extends="baseLayout">
+        <put-attribute name="title" value="Dịch vụ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/dichvu.jsp" />
+    </definition>
+    <definition name="qldv" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý dịch vụ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/qldv.jsp" />
+    </definition>
+    <definition name="adddv" extends="baseLayout">
+        <put-attribute name="title" value="Thêm dịch vụ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/adddv.jsp" />
+    </definition>
+    <definition name="update-dv" extends="baseLayout">
+        <put-attribute name="title" value="Cập nhật dịch vụ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/update-dv.jsp" />
+    </definition>
+    <definition name="qlnv" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý nhân viên" />
+        <put-attribute name="content" value="/WEB-INF/jsp/qlnv.jsp" />
+    </definition>
+    <definition name="addnv" extends="baseLayout">
+        <put-attribute name="title" value="Thêm nhân viên" />
+        <put-attribute name="content" value="/WEB-INF/jsp/addnv.jsp" />
+    </definition>
+    <definition name="list-qtv" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị viên" />
+        <put-attribute name="content" value="/WEB-INF/jsp/list-qtv.jsp" />
+    </definition>
+    <definition name="update-nv" extends="baseLayout">
+        <put-attribute name="title" value="Cập nhật nhân viên" />
+        <put-attribute name="content" value="/WEB-INF/jsp/update-nv.jsp" />
+    </definition>
+    <definition name="qlp" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý phòng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/qlp.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+        <put-attribute name="footer" value="" />
+    </definition>
+    <definition name="signup" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký" />
+        <put-attribute name="content" value="/WEB-INF/jsp/signup.jsp" />
+        <put-attribute name="footer" value="" />
+    </definition>
+    <definition name="user-info" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký" />
+        <put-attribute name="content" value="/WEB-INF/jsp/user-info.jsp" />
+        <put-attribute name="footer" value="" />
+    </definition>
+    <definition name="user-update" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký" />
+        <put-attribute name="content" value="/WEB-INF/jsp/user-update.jsp" />
+        <put-attribute name="footer" value="" />
+    </definition>
+    
+    <definition name ="baseAdminLayout" template="/WEB-INF/layout/base-admin.jsp">
+        <put-attribute name="title" value="Quản trị hệ thống" />
+        <put-attribute name="left" value="/WEB-INF/layout/admin-left.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/admin-footer.jsp" />
+        <put-attribute name="content" value="BASE" />
+    </definition>
+    <definition name="TKloaiphong" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê loại phòng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/TKloaiphong.jsp" />
+    </definition>
+    <definition name="DTphong" extends="baseAdminLayout">
+        <put-attribute name="title" value="Doanh thu phòng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/DTphong.jsp" />
+    </definition>
+    <definition name="DTthang" extends="baseAdminLayout">
+        <put-attribute name="title" value="Doanh thu phòng tháng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/DTthang.jsp" />
+    </definition>
+    <definition name="tongDT" extends="baseAdminLayout">
+        <put-attribute name="title" value="Tổng doanh thu tháng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/tongDT.jsp" />
+    </definition>
+    <definition name="DTDVthang" extends="baseAdminLayout">
+        <put-attribute name="title" value="Doanh thu dịch vụ tháng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/DTDVthang.jsp" />
+    </definition>
+    <definition name="DTdichvu" extends="baseAdminLayout">
+        <put-attribute name="title" value="Doanh thu dịch vụ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/DTdichvu.jsp" />
+    </definition>
+    <definition name="TKKH" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê khách hàng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/TKKH.jsp" />
+    </definition>
+    <definition name="KHTP" extends="baseAdminLayout">
+        <put-attribute name="title" value="Khách hàng từng phòng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/KHTP.jsp" />
+    </definition>
+</tiles-definitions>
