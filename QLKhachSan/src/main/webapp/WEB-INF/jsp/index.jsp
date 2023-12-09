@@ -15,7 +15,7 @@
     <img class="w3-image" src="<c:url value="images/view.jpg" />" alt="The Hotel">
     <div class="w3-display-left w3-padding w3-col l6 m8">
         <div class="w3-container w3-red">
-            <h2>Change Peace</h2>
+            <h2>Change Peace Hotel</h2>
         </div>
         <div class="w3-container w3-white w3-padding-16">
             <form action="<c:url value="/phong"/>" target="_blank">
